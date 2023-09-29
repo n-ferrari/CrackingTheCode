@@ -1,7 +1,7 @@
 //Is Unique: Implement an algorithm to determine if a string has all unique characters.
 // What if you cannot use additional data structures?
  //       Hints: #44, #117, #132
-public class Main {
+public class Question1_1 {
     public static void main(String[] args) {
         System.out.println(isUnique("wsehua"));
     }
