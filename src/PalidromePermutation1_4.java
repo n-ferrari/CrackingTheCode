@@ -6,16 +6,19 @@
  */
 public class PalidromePermutation1_4 {
     public static void main(String[] args) {
-        String word = "rraa   b";
+        String word = "aabbcdef";
         System.out.println(isPalindromePermuted(word));
 
     }
 
     public static boolean isPalindromePermuted(String word) {
         int[] arrayLetters = arrayLettersAscii(word);
+
+        // Use Math.floorDiv for explicit flooring the div
         int pairsNeeded = (numberCharactersWithoutSpace(word) / 2);
         for (int i = 0; i < arrayLetters.length; i++) {
             if (arrayLetters[i] > 0) {
+                // Use Math.floorDiv for explicit flooring the div
                 pairsNeeded = pairsNeeded - (arrayLetters[i] / 2);
             }
         }
